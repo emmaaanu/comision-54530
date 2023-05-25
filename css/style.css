@@ -51,6 +51,9 @@ nav {
   height: 60px;
   padding: 0 20px;
   margin: 0 auto;
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 5px grey;
   
 }
 
@@ -139,44 +142,6 @@ section {
   margin-bottom: 20px;
 }
 
-.main-container {
-  display: grid;
-  grid-auto-columns: 1fr 1fr;
-  grid-auto-rows: repeat(2, 1fr);
-  grid-template-areas: 
-  "section-1 section-1"
-  "section-2 section-3"
-  "section-4 section-5"
-  ;
-  justify-items: center;
-  align-items: center;
-}
-
-.grid-section-1 {
-  grid-area: section-1;
-  width: 80%;
-}
-
-.grid-section-2 {
-  grid-area: section-2;
-  width: 60%;
-  height: 100%;
-}
-
-.grid-section-3 {
-  grid-area: section-3;
-  width: 60%; 
-  height: 100%;
-}
-
-.grid-section-4 {
-  grid-area: section-4; 
-}
-
-.grid-section-5 {
-  grid-area: section-5; 
-}
-
 .main-container section, .sobre-nosotros{
   background-color: #FFFFFF;
   padding: 20px;
@@ -187,9 +152,10 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 
-  "section-1 section-2" "section-3"
+  "section-1 section-2 section-3"
   ;
   grid-gap: 10px;
+  align-content: center;
   justify-content: center;
   justify-items: center;
 }
@@ -334,3 +300,111 @@ footer {
   margin-right: 10px;
 }
 
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(251, 249, 249);
+}
+
+.main-container {
+  padding: 20px;
+}
+
+/* Estilos para pantallas de 1024px o menos */
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 10px; /* Espaciado inferior entre el logo y la barra de navegación */
+  }
+
+  nav {
+    order: 1; /* Cambia el orden de la barra de navegación para que aparezca debajo del logo */
+    margin-top: 10px; /* Espaciado superior entre el logo y la barra de navegación */
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    background-color: #333; 
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+
+  main{
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu a {
+    color: rgb(12, 1, 1);
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+    
+    text-align: center;
+  }
+
+  .menu a {
+    display: block;
+  }
+
+  .main-container {
+    order: -1;
+  }
+}
+  
