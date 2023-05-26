@@ -42,6 +42,8 @@ section {
 }
 
 /* Estilo del menú */
+
+
 nav {
   display: flex;
   justify-content: center;
@@ -300,36 +302,7 @@ footer {
   margin-right: 10px;
 }
 
-.container-fluid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
 
-nav {
-  display: flex;
-}
-
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.menu li {
-  padding: 10px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: rgb(251, 249, 249);
-}
-
-.main-container {
-  padding: 20px;
-}
 
 /* Estilos para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
@@ -341,13 +314,13 @@ nav {
   }
 
   img {
-    margin-bottom: 10px; /* Espaciado inferior entre el logo y la barra de navegación */
+    margin-bottom: 10px; 
   }
 
   nav {
-    order: 1; /* Cambia el orden de la barra de navegación para que aparezca debajo del logo */
-    margin-top: 10px; /* Espaciado superior entre el logo y la barra de navegación */
-    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    order: 1; 
+    margin-top: 10px;
+    width: 100%; 
     background-color: #333; 
   }
   
@@ -369,42 +342,58 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .container-fluid {
-    flex-direction: column;
-    padding: 10px;
+  /* Estilo del menú responsive */
+  .menu-open {
+    overflow: hidden; /* Evita el desplazamiento del contenido cuando el menú está abierto */
   }
-
-  .menu a {
-    color: rgb(12, 1, 1);
-  }
-
   nav {
     flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    background-color: #333;
   }
-
-  .menu {
-    display: none;
+  
+  nav ul {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+  }
+  
+  nav li {
+    margin: 10px 0;
   }
 
-  .menu.open {
+  nav a {
+    margin: 0;
+  }
+  .sobre-nosotros {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-
-  .menu li {
-    width: 100%;
-    
-    text-align: center;
-  }
-
-  .menu a {
-    display: block;
-  }
-
-  .main-container {
-    order: -1;
+   /* Estilo del encabezado al desplazarse el menú */
+   header.container-fluid {
+    position: relative;
+    padding-top:20px; /* Ajusta según el alto del menú */
   }
 }
-  
+
+@media (max-width: 564px){
+  .imagen-gato, .imagen-perro {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 441px){
+  .imagen-gato, .imagen-perro {
+    width: 250px;
+    height: 150px;
+  }
+}
+@media (max-width: 385px){
+  .imagen-gato, .imagen-perro {
+    width: 200px;
+    height: 100px;
+  }
+}
