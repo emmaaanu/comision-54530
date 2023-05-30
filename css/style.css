@@ -348,17 +348,16 @@ a:hover{
   display: none;
   position:absolute;
   right:2rem;
-  top:170px;
+  top:100px;
   height: 0;
-  width: 300px;
-  background-color: rgba(0, 0, 0, 0.1);
+  width: 400px;
   backdrop-filter: blur(15px);
   border-radius:10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown_menu.open{
-  height: 240px;
+  height: 270px;
 }
 
 .dropdown_menu li{
@@ -377,39 +376,6 @@ a:hover{
 
 /* Estilos para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  img {
-    margin-bottom: 10px; 
-  }
-
-  nav {
-    order: 1; 
-    margin-top: 10px;
-    width: 100%; 
-    background-color: #333; 
-  }
-  
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-
-  main{
-    margin-top: 200px;
-  }
   .navbar .links,
     .navbar .action_btn{
         display:none;
@@ -426,37 +392,12 @@ a:hover{
 
 
 @media (max-width: 768px) {
-  /* Estilo del menú responsive */
-  .menu-open {
-    overflow: hidden; /* Evita el desplazamiento del contenido cuando el menú está abierto */
-  }
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 20px 0;
-    background-color: #333;
-  }
-  
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  nav li {
-    margin: 10px 0;
-  }
-
-  nav a {
-    margin: 0;
-  }
   .sobre-nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-   /* Estilo del encabezado al desplazarse el menú */
-  
+  } 
 }
 
 @media (max-width: 564px){
