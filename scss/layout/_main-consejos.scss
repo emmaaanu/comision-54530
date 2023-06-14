@@ -1,0 +1,55 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    h2 {
+      font-size: 2rem;
+      margin: 0 0 20px 0;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .titulo-noticia {
+    text-align: center;
+  }
+  
+  .noticia {
+    text-align: justify;
+  
+    li {
+      list-style-type: none;
+    }
+  }
+  
+  section p {
+    text-align: justify;
+  }
+  
+  article img {
+    max-width: 800px;
+  }
+  
+  .imagen-gato, .imagen-perro {
+    width: 400px;
+    height: 300px;
+  }
+  
+  .perro li, .gato li {
+    padding-bottom: 10px;
+  }
+  
+  .noticia {
+    padding: 0 30px;
+  }

@@ -1,0 +1,16 @@
+/* Estilos para pantallas de 1024px o menos */
+@media (max-width: 1024px) {
+    .navbar {
+      .links, .action_btn {
+        display: none;
+      }
+  
+      .toggle_btn {
+        display: block;
+      }
+    }
+  
+    .dropdown_menu {
+      display: block;
+    }
+  }

@@ -1,0 +1,9 @@
+@mixin flex($direction,$item,$content,$background-color,$color,$padding) {
+    display: flex;
+    flex-direction:$direction;
+    align-items:$item;
+    justify-content:$content;
+    background-color:$background-color;
+    color:$color;
+    padding:$padding;
+}

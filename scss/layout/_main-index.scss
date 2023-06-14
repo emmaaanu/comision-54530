@@ -1,0 +1,45 @@
+/* Estilo del contenido principal */
+
+body {
+    background-color: #F5F5F5;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+  }
+  
+  h1 {
+    color: #333333;
+  }
+  
+  a {
+    color: #A9A9A9;
+  }
+  
+  ul, ol {
+    padding: 20px;
+    text-align: justify;
+    list-style-type: none;
+  }
+  
+  main {
+    scroll-padding-top: 80px;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    min-height: calc(100vh - 200px);
+    overflow: auto;
+  }
+  
+  section {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .main-container section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  

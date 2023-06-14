@@ -1,0 +1,35 @@
+/* Estilo del pie de página */
+
+footer {
+    @include flex(column,center,center,#333,#fff,30px);
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  
+    p {
+      margin-bottom: 20px;
+    }
+  
+    a {
+      display: block;
+      width: 30px;
+      margin-bottom: 10px;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    div:nth-child(2) {
+      display: flex;
+  
+      a {
+        margin-right: 10px;
+      }
+    }
+  }
