@@ -1,7 +1,7 @@
 /* Estilo del pie de página */
 
 footer {
-    @include flex(column,center,center,#333,#fff,30px);
+    @include flex(column,center,center,#333,#fff,20px);
   }
   
   .social-media {
@@ -11,13 +11,13 @@ footer {
     align-items: center;
   
     p {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
   
     a {
       display: block;
-      width: 30px;
-      margin-bottom: 10px;
+      width: 20px;
+      margin-bottom: 5px;
     }
   
     img {
